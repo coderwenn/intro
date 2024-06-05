@@ -5,6 +5,7 @@ import { Navigate } from 'react-router-dom';
 import { useRoutes } from 'react-router-dom'
 import Login from "../pages/login";
 import Comp from "@/pages/comp";
+import CrazyComp from "@/pages/crazy";
 
 
 const Details = React.lazy(() => import("@/pages/details/index.tsx"))
@@ -26,6 +27,10 @@ export const routers: Irouters[] = [
                 path: '/home/comp',
                 name: '组件',
                 element: <Comp />
+            }, {
+                path: '/home/Crazy',
+                name: 'Js学习',
+                element: <CrazyComp />
             }
         ]
 
